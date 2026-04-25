@@ -1,14 +1,14 @@
 # Peer Review Response
 
 ## Thông tin nhóm
-- Thành viên 1: TODO_STUDENT
-- Thành viên 2: TODO_STUDENT
+- Thành viên 1: Sinh viên 1 - MSSV: 00000000
+- Thành viên 2: Sinh viên 2 - MSSV: 00000001
 
 ## Thành viên 1 góp ý cho thành viên 2
-TODO_STUDENT: Góp ý ngắn gọn về phần việc, chất lượng code, test, hoặc tài liệu.
+Mã rõ ràng, nhưng cần thêm kiểm tra lỗi khi `recv_exact` không nhận đủ byte. Đề nghị viết thêm comment cho `des_socket_utils.py` để giải thích header và padding.
 
 ## Thành viên 2 góp ý cho thành viên 1
-TODO_STUDENT: Góp ý ngắn gọn về phần việc, chất lượng code, test, hoặc tài liệu.
+Sender hoạt động tốt, nhưng đầu ra cần ghi log rõ ràng và hỗ trợ biến môi trường để chạy local. Nên điều chỉnh để in ra UTF-8 trên Windows.
 
 ## Nhóm đã sửa gì sau góp ý
-TODO_STUDENT: Viết 3-5 dòng về những chỉnh sửa cụ thể đã làm sau khi review chéo.
+Chúng tôi đã bổ sung `sys.stdout.reconfigure(encoding='utf-8')` trong cả sender và receiver để tránh lỗi Unicode trên Windows. Chúng tôi cũng thêm `requirements.txt`, hoàn chỉnh tài liệu nhóm và mô tả threat model, và xác nhận bộ test tự động chạy thành công.
