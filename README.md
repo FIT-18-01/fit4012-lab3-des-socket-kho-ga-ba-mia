@@ -43,11 +43,38 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 - `report-1page.md`: báo cáo ngắn
 
 ## How to run
-### 1) Cài môi trường
-```bash
+### 1) Cài môi trường Python
+
+> Dùng `python -m pip` để chắc chắn pip chạy đúng theo Python đang dùng.
+
+**Windows (CMD):**
+```bat
 python -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+**Windows (PowerShell):**
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+**Linux/macOS (bash/zsh):**
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Nếu gặp lỗi `No module named Crypto`, thường là do chưa cài `pycryptodome` đúng môi trường. Chạy lại:
+
+```bash
+python -m pip install -r requirements.txt
 ```
 
 ### 2) Chạy Receiver
@@ -62,6 +89,9 @@ python sender.py
 Rồi nhập bản tin khi chương trình hỏi.
 
 ### 4) Chạy demo local bằng biến môi trường
+
+**Linux/macOS (bash/zsh)**
+
 Terminal 1:
 ```bash
 RECEIVER_PORT=6001 python receiver.py
@@ -70,6 +100,18 @@ RECEIVER_PORT=6001 python receiver.py
 Terminal 2:
 ```bash
 SERVER_IP=127.0.0.1 SERVER_PORT=6001 MESSAGE="Xin chao FIT4012" python sender.py
+```
+
+**Windows CMD**
+
+Terminal 1:
+```bat
+set RECEIVER_PORT=6001 && python receiver.py
+```
+
+Terminal 2:
+```bat
+set SERVER_IP=127.0.0.1 && set SERVER_PORT=6001 && set MESSAGE=Xin chao FIT4012 && python sender.py
 ```
 
 ## Input / Output
