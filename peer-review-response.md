@@ -1,8 +1,8 @@
 # Peer Review Response
 
 ## Thông tin nhóm
-- Thành viên 1: Sinh viên 1 - MSSV: 00000000
-- Thành viên 2: Sinh viên 2 - MSSV: 00000001
+- Thành viên 1: Phùn Quang Huy - MSSV: 1871020311
+- Thành viên 2: Nguyễn Minh Đức - MSSV: 1871020149
 
 ## Thành viên 1 góp ý cho thành viên 2
 Mã rõ ràng, nhưng cần thêm kiểm tra lỗi khi `recv_exact` không nhận đủ byte. Đề nghị viết thêm comment cho `des_socket_utils.py` để giải thích header và padding.

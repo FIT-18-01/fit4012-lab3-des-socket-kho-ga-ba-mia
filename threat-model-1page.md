@@ -1,8 +1,8 @@
 # Threat Model - Lab 3
 
 ## Thông tin nhóm
-- Thành viên 1: Sinh viên 1 - MSSV: 00000000
-- Thành viên 2: Sinh viên 2 - MSSV: 00000001
+- Thành viên 1: Phùn Quang Huy - MSSV: 1871020311
+- Thành viên 2: Nguyễn Minh Đức - MSSV: 1871020149
 
 ## Assets
 - Bản tin gốc (plaintext) gửi giữa sender và receiver.

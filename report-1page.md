@@ -1,14 +1,14 @@
 # Report 1 page - Lab 3
 
 ## Thông tin nhóm
-- Thành viên 1: Sinh viên 1 - MSSV: 00000000
-- Thành viên 2: Sinh viên 2 - MSSV: 00000001
+- Thành viên 1: Phùn Quang Huy - MSSV: 1871020311
+- Thành viên 2: Nguyễn Minh Đức - MSSV: 1871020149
 
 ## Mục tiêu
 Thiết kế hệ thống gửi/nhận dữ liệu mã hoá DES qua TCP socket, học cách sử dụng DES-CBC với padding PKCS#7, và xây dựng cơ chế header độ dài để định vị ciphertext.
 
 ## Phân công thực hiện
-Sinh viên 1 chịu trách nhiệm chính cho `sender.py`, tạo key/IV, mã hoá dữ liệu và gửi gói tin. Sinh viên 2 chịu trách nhiệm chính cho `receiver.py`, đọc header, nhận ciphertext và giải mã. Cả hai phối hợp viết `des_socket_utils.py`, kiểm thử tự động và hoàn thiện tài liệu.
+Phùn Quang Huy chịu trách nhiệm chính cho `sender.py`, tạo key/IV, mã hoá dữ liệu và gửi gói tin. Nguyễn Minh Đức chịu trách nhiệm chính cho `receiver.py`, đọc header, nhận ciphertext và giải mã. Cả hai phối hợp viết `des_socket_utils.py`, kiểm thử tự động và hoàn thiện tài liệu.
 
 ## Cách làm
 `sender.py` tạo key và IV 8 byte ngẫu nhiên, mã hoá plaintext bằng DES-CBC với padding PKCS#7, rồi gửi tuần tự key + IV + length header + ciphertext qua socket. `receiver.py` lắng nghe kết nối TCP, đọc chính xác 20 byte header, phân tích key, IV và độ dài ciphertext, sau đó đọc ciphertext và giải mã.
