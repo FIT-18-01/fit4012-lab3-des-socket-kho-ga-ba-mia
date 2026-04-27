@@ -1,0 +1,12 @@
+Thời gian chạy: 2024-04-26 14:30:00
+Người thực hiện: Phùn Quang Huy (Thành viên 1)
+Tình huống: Demo happy path - gửi bản tin thành công
+Input: "Demo by Phùn Quang Huy - FIT4012 Lab 3"
+Kết quả:
+[+] Sent ciphertext.
+Key: c889651d08c816c6
+IV: f9b6d849949f9872
+Ciphertext: f2de6c0b8a9cb202d7c89b45ce3f64a80ef54a0ea2466cd7877f5ee2e79f5011f0d1ac6fdb1fcfed
+
+Receiver output:
+[+] Plaintext message: Demo by Phùn Quang Huy - FIT4012 Lab 3

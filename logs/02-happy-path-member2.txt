@@ -1,0 +1,12 @@
+Thời gian chạy: 2024-04-26 14:35:00
+Người thực hiện: Nguyễn Minh Đức (Thành viên 2)
+Tình huống: Demo happy path - nhận và giải mã bản tin thành công
+Input: Bản tin được gửi từ sender
+Kết quả:
+[+] Plaintext message: Demo by Nguyễn Minh Đức - FIT4012 Lab 3
+
+Sender output (để tham khảo):
+[+] Sent ciphertext.
+Key: f027d179d5efb66a
+IV: 26bc6fba7fea1216
+Ciphertext: 68fc389b517cb035d051c4c3b62c8e435a3bb495e28efac2029ed1e5f1a030889b50785805be4da47d2839d1463d3135
