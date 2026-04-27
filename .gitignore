@@ -5,5 +5,9 @@ __pycache__/
 *.log
 *.txt
 !.gitkeep
+!requirements.txt
+!logs/*.log
+!logs/*.txt
+!logs/README.md
 venv/
 .venv/
