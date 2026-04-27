@@ -17,10 +17,14 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        working-directory: ${{ github.workspace }}
         run: |
+          echo "Workspace=$GITHUB_WORKSPACE"
+          pwd
+          ls -la
+          ls -la "$GITHUB_WORKSPACE"
+          cd "$GITHUB_WORKSPACE"
           python -m pip install --upgrade pip
-          python -m pip install -r "${{ github.workspace }}/requirements.txt"
+          python -m pip install -r requirements.txt
 
       - name: Static syntax check
         run: |
